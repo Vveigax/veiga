@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Horários - IFPR Barracão</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #e9f5ee;
+      color: #333;
+    }
+
+    header {
+      background-color: #2e8b57;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #2e8b57;
+      font-size: 1.6rem;
+    }
+
+    .appsheet-frame {
+      width: 100%;
+      height: 700px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f4f4f4;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #2e8b57;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>IFPR - Campus Barracão</h1>
+  <p>Atualização de Horários | 2º Informática</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Visualizar Horários no AppSheet</h2>
+    <iframe 
+      class="appsheet-frame"
+      src="https://www.appsheet.com/start/9e1ee847-0206-407e-b8b7-92ffb3bf216d" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+</body>
+</html>
