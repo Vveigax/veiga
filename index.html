@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Horários - IFPR Barracão</title>
+  <title>IFPR Barracão</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -17,25 +17,41 @@
     }
 
     header {
-      background-color: #2e8b57;
-      padding: 20px;
-      color: white;
-      text-align: center;
+      background-color: white;
+      padding: 20px 0;
+      border-bottom: 10px solid #2e8b57;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    .header-wrapper {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
     }
 
-    header p {
-      margin: 5px 0 0;
+    .logo {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header-text strong {
+      font-size: 1.4rem;
+    }
+
+    .header-text span {
       font-size: 1rem;
     }
 
     .container {
       max-width: 1000px;
-      margin: 30px auto;
+      margin: 10px auto;
       padding: 0 20px;
     }
 
@@ -77,13 +93,19 @@
 <body>
 
 <header>
-  <h1>IFPR - Campus Barracão</h1>
-  <p>Atualização de Horários | 2º Informática</p>
+  <div class="header-wrapper">
+    <img src="data:image/png;base64,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" alt="Logo IFPR" class="logo">
+    <div class="header-text">
+      <strong>INSTITUTO FEDERAL PARANÁ</strong>
+      <span>Paraná - Campus Barracão</span>
+      <span>Anderson Felipe</span>
+    </div>
+  </div>
 </header>
 
 <div class="container">
   <div class="card">
-    <iframe 
+        <iframe 
       class="appsheet-frame"
       src="https://www.appsheet.com/start/9e1ee847-0206-407e-b8b7-92ffb3bf216d" 
       allowfullscreen>
